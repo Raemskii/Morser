@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".StringMorse">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lblLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:fontFamily="casual"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Enter text to morse"
+            android:textColor="#673AB7"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:ems="10"
+            android:fontFamily="casual"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btnMorseStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:onClick="startMorsing"
+            android:text="Morse!" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical">
+
+            <RadioButton
+                android:id="@+id/rBtnFlash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Flashlight" />
+
+            <RadioButton
+                android:id="@+id/rBtnSound"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sound" />
+
+            <RadioButton
+                android:id="@+id/rBtnBoth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Flashlight + Sound" />
+        </RadioGroup>
+    </LinearLayout>
+
+</FrameLayout>
